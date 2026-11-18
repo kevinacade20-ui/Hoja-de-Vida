@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estudios y certificaciones de Kevin Bohorquez.">
+  <title>Formación | Kevin Bohorquez</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Fuentes de Google Fonts (incrustación de fuentes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="Logo con las iniciales KB">
+        <span>Kevin Bohorquez</span>
+      </a>
+
+      <nav>
+        <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formacion.html" class="activo">Formación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones-barra">
+        <button class="boton-icono" id="boton-tema" title="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+        <button class="boton-icono" id="boton-menu" title="Abrir menú">Menú</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="contenedor">
+        <span class="etiqueta-seccion">Formación</span>
+        <h1>Mi camino <span class="resaltado">académico</span></h1>
+        <p class="subtitulo-grande">Del colegio a la universidad, y con varias certificaciones en el camino.</p>
+
+        <!-- Línea de tiempo con una lista ordenada -->
+        <ol class="linea-tiempo">
+          <li>
+            <span class="fecha">2025 – Actualidad</span>
+            <h3>Ingeniería de Software</h3>
+            <p>Fundación Universitaria Compensar, Bogotá.</p>
+          </li>
+          <li>
+            <span class="fecha">2022</span>
+            <h3>Bachiller académico</h3>
+            <p>Liceo Central Américas I.E.D., Bogotá.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <hr class="contenedor">
+
+    <section>
+      <div class="contenedor">
+        <span class="etiqueta-seccion">Formación complementaria</span>
+        <h2>Certificaciones, cursos y diplomado</h2>
+
+        <div class="tabla-envoltura">
+          <table>
+            <thead>
+              <tr>
+                <th>Insignia</th>
+                <th>Formación</th>
+                <th>Entidad</th>
+                <th>Tipo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="img/cert-java.svg" alt="Insignia de Java"></td>
+                <td>Java</td>
+                <td>Oracle</td>
+                <td>Certificación</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-python.svg" alt="Insignia de Python"></td>
+                <td>Python</td>
+                <td>Platzi</td>
+                <td>Certificación</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-csharp.svg" alt="Insignia de C#"></td>
+                <td>C#</td>
+                <td>Microsoft</td>
+                <td>Certificación</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-database.svg" alt="Insignia de bases de datos"></td>
+                <td>Database</td>
+                <td>Oracle</td>
+                <td>Certificación</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-datos.svg" alt="Insignia de ciencia de datos"></td>
+                <td>Python para Ciencia de Datos</td>
+                <td>Platzi</td>
+                <td>Curso</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-conta.svg" alt="Insignia de 120 horas"></td>
+                <td>Contabilidad Básica (120 horas)</td>
+                <td>Diplomado certificado</td>
+                <td>Diplomado</td>
+              </tr>
+              <tr>
+                <td><img src="img/cert-java.svg" alt="Insignia de Java"></td>
+                <td>Java Programming</td>
+                <td>Oracle</td>
+                <td>Curso</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Total: 7 formaciones complementarias</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+        <div class="tarjeta">
+          <span class="insignia">En curso</span>
+          <h3>Inglés</h3>
+          <p>Nivel A2 y en formación continua. Mi meta es poder leer documentación técnica y hablar con equipos en inglés sin miedo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Kevin Santiago Bohorquez Barragán</strong> · Bogotá D.C., Colombia</p>
+      <p>Hoja de Vida Web</p>
+      <p><a href="#">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+/* =====================================================
+   HOJA DE VIDA WEB - Kevin Santiago Bohorquez Barragán
+   Archivo de estilos externo (css/styles.css)
+   Curso: Introducción a los Lenguajes de Internet
+   ===================================================== */
+
+
+/* ---------- 1. VARIABLES DE COLOR (modo claro y modo oscuro) ---------- */
+:root {
+  --fondo: #fbf7f2;
+  --tarjeta: #ffffff;
+  --texto: #1d1b20;
+  --texto-suave: #5d5a63;
+  --naranja: #f26a2e;
+  --azul: #0f4c5c;
+  --durazno: #ffe8d9;
+  --amarillo: #ffc857;
+  --linea: #e8dfd5;
+  --sombra: 0 8px 24px rgba(29, 27, 32, 0.08);
+}
+
+/* Cuando JavaScript le agrega la clase "oscuro" al body, cambian las variables */
+body.oscuro {
+  --fondo: #14161b;
+  --tarjeta: #1f232b;
+  --texto: #f3efe9;
+  --texto-suave: #b4b0b8;
+  --azul: #7fd1e3;
+  --durazno: #2b2f38;
+  --linea: #343945;
+  --sombra: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ---------- 2. ESTILOS GENERALES (selectores de etiqueta) ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: "Inter", Verdana, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+}
+
+h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 800; letter-spacing: -1px; margin-bottom: 0.35em; }
+h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 700; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+
+p { margin: 0 0 1em; }
+
+a {
+  color: var(--naranja);
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+hr {
+  border: none;
+  border-top: 5px dotted var(--linea);   /* igual que el hr punteado visto en clase */
+  margin: 3rem 0;
+}
+
+::selection {
+  background: var(--naranja);
+  color: #fff;
+}
+
+
+/* ---------- 3. CONTENEDOR GENERAL ---------- */
+.contenedor {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+section { padding: 3.5rem 0; }
+
+.etiqueta-seccion {
+  display: inline-block;               /* display inline-block visto en clase */
+  background: var(--durazno);
+  color: var(--naranja);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.subtitulo-grande {
+  color: var(--texto-suave);
+  font-size: 1.15rem;
+  max-width: 640px;
+}
+
+
+/* ---------- 4. BARRA DE NAVEGACIÓN (position: sticky) ---------- */
+.barra {
+  position: sticky;                    /* se queda pegada arriba al hacer scroll */
+  top: 0;
+  z-index: 100;
+  background: var(--fondo);
+  border-bottom: 1px solid var(--linea);
+  transition: background-color 0.4s;
+}
+
+.barra .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--texto);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.marca img { width: 38px; height: 38px; }
+.marca:hover { text-decoration: none; }
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  color: var(--texto);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.25s, color 0.25s;
+}
+.menu a:hover {
+  background: var(--durazno);
+  text-decoration: none;
+}
+.menu a.activo {
+  background: var(--naranja);
+  color: #fff;
+}
+
+.acciones-barra {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Botones de texto de la barra: modo oscuro y menú */
+.boton-icono {
+  height: 42px;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--linea);
+  background: var(--tarjeta);
+  color: var(--texto);
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.boton-icono:hover {
+  transform: translateY(-2px);
+  border-color: var(--naranja);
+}
+
+#boton-menu { display: none; }          /* solo se ve en pantallas pequeñas */
+
+
+/* ---------- 5. BOTONES ---------- */
+.boton {
+  display: inline-block;
+  background: var(--naranja);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  border: 2px solid var(--naranja);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.boton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(242, 106, 46, 0.35);
+  text-decoration: none;
+}
+.boton.secundario {
+  background: transparent;
+  color: var(--naranja);
+}
+
+
+/* ---------- 6. PORTADA (hero) ---------- */
+.portada {
+  padding: 4rem 0 3rem;
+}
+.portada .contenedor {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+.saludo {
+  color: var(--naranja);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.portada h1 span { color: var(--naranja); }
+.portada .botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+}
+.portada img {
+  width: 100%;
+  animation: flotar 5s ease-in-out infinite;
+}
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+
+/* ---------- 7. TARJETAS Y REJILLAS ---------- */
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  position: relative;                  /* para poder poner la insignia con position: absolute */
+  background: var(--tarjeta);
+  border: 1px solid var(--linea);
+  border-radius: 20px;
+  padding: 1.6rem;
+  box-shadow: var(--sombra);
+  transition: transform 0.3s, border-color 0.3s;
+}
+.tarjeta:hover {
+  transform: translateY(-6px);
+  border-color: var(--naranja);
+}
+.tarjeta h3 { margin-bottom: 0.5rem; }
+.tarjeta p:last-child { margin-bottom: 0; }
+
+.insignia {
+  position: absolute;                  /* position: absolute dentro de .tarjeta (relative) */
+  top: 1rem;
+  right: 1rem;
+  background: var(--amarillo);
+  color: #1d1b20;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+}
+
+.dato-grande {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--naranja);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+/* Etiquetas de tecnologías */
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.etiquetas li {
+  display: inline-block;
+  background: var(--durazno);
+  color: var(--texto);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.75rem;
+  border-radius: 999px;
+}
+
+
+/* ---------- 8. SOBRE MÍ (dos columnas con flex) ---------- */
+.dos-columnas {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.dos-columnas > div { flex: 1; }
+.foto-perfil {
+  max-width: 340px;
+  margin: 0 auto;
+  border-radius: 40px;
+  box-shadow: var(--sombra);
+}
+
+.lista-datos {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+.lista-datos li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+.lista-datos strong { color: var(--azul); }
+
+
+/* ---------- 9. LÍNEA DE TIEMPO ---------- */
+.linea-tiempo {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0 0 0 1.8rem;
+  border-left: 4px solid var(--naranja);
+}
+.linea-tiempo > li {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.linea-tiempo > li::before {            /* el circulito de cada punto */
+  content: "";
+  position: absolute;
+  left: -2.45rem;
+  top: 0.35rem;
+  width: 16px;
+  height: 16px;
+  background: var(--fondo);
+  border: 4px solid var(--naranja);
+  border-radius: 50%;
+}
+.fecha {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--azul);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/* ---------- 10. TABLAS ---------- */
+.tabla-envoltura { overflow-x: auto; }   /* para que la tabla no se salga en el celular */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--tarjeta);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+th, td {
+  text-align: left;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid var(--linea);
+}
+thead th {
+  background: var(--azul);
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+}
+body.oscuro thead th { color: #14161b; }
+tbody tr:hover { background: var(--durazno); }
+tfoot td {
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  border-bottom: none;
+}
+td img { width: 46px; }
+td a, .tabla-envoltura a { word-break: break-word; }
+
+
+/* ---------- 11. BARRAS DE HABILIDADES ---------- */
+.habilidad { margin-bottom: 1.3rem; }
+.habilidad .nombre {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.habilidad .nivel { color: var(--texto-suave); font-weight: 500; font-size: 0.9rem; }
+.pista {
+  height: 12px;
+  background: var(--linea);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.relleno {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--naranja), var(--amarillo));
+  width: 0;                              /* empieza vacía y se llena con la animación */
+  animation: llenar 1.4s ease-out forwards;
+}
+.relleno.avanzado   { --ancho: 75%; }
+.relleno.intermedio { --ancho: 55%; }
+.relleno.basico     { --ancho: 38%; }
+.relleno.a2         { --ancho: 30%; }
+.relleno.nativo     { --ancho: 100%; }
+@keyframes llenar {
+  from { width: 0; }
+  to   { width: var(--ancho); }
+}
+
+
+/* ---------- 12. PROYECTOS ---------- */
+.proyecto { padding: 0; overflow: hidden; }
+.proyecto img { width: 100%; height: 190px; object-fit: cover; }
+.proyecto .cuerpo { padding: 1.4rem 1.6rem 1.6rem; }
+
+
+/* ---------- 13. FORMULARIO ---------- */
+form { display: grid; gap: 1rem; }
+label { font-weight: 600; font-size: 0.95rem; }
+input, select, textarea {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--linea);
+  border-radius: 14px;
+  background: var(--tarjeta);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.25s;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--naranja);
+}
+textarea { min-height: 130px; resize: vertical; }
+
+#respuesta-formulario {
+  display: none;                         /* oculto hasta que JavaScript lo muestre */
+  background: var(--durazno);
+  border-left: 6px solid var(--naranja);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+
+
+/* ---------- 14. PIE DE PÁGINA ---------- */
+.pie {
+  margin-top: 3rem;
+  padding: 2.2rem 0;
+  background: var(--azul);
+  color: #fff;
+  text-align: center;
+  font-size: 0.92rem;
+}
+body.oscuro .pie { background: #0b0d11; }
+.pie p { margin: 0.2rem 0; }
+.pie a { color: var(--amarillo); }
+
+
+/* ---------- 15. ADAPTACIÓN A CELULAR (media queries) ---------- */
+@media (max-width: 860px) {
+  .portada .contenedor,
+  .dos-columnas {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .portada .contenedor { display: block; }
+  .portada img { max-width: 420px; margin: 2rem auto 0; }
+
+  #boton-menu { display: block; }
+  .marca span { display: none; }       /* en el celular solo se ve el logo, para que quepan los botones */
+
+  .menu {
+    display: none;                       /* el menú se esconde... */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--fondo);
+    border-bottom: 1px solid var(--linea);
+    padding: 0.8rem 4%;
+  }
+  .menu.abierto { display: flex; }       /* ...y JavaScript lo muestra con esta clase */
+}
+
+
+/* Palabra resaltada en los títulos */
+.resaltado { color: var(--naranja); }
+
+
+/* Tarjetas de habilidades personales (solo texto) */
+.habilidad-personal {
+  padding: 1.1rem 1.4rem;
+  border-left: 6px solid var(--naranja);
+}
+.habilidad-personal h3 { margin: 0; font-size: 1.05rem; }
+
+/* Enlace "Ver en GitHub" dentro de las tarjetas de proyectos */
+.proyecto .cuerpo .enlace { margin: 1rem 0 0; }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140">
+  <path d="M30 88 L18 135 L42 124 L58 138 L64 92 Z" fill="#2f9e6e" opacity=".65"/>
+  <path d="M90 88 L102 135 L78 124 L62 138 L56 92 Z" fill="#2f9e6e" opacity=".8"/>
+  <circle cx="60" cy="58" r="50" fill="#2f9e6e"/>
+  <circle cx="60" cy="58" r="40" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 7" stroke-linecap="round"/>
+  <text x="60" y="68" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="21" text-anchor="middle" fill="#fff">Datos</text>
+</svg>

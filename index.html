@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoja de vida web de Kevin Bohorquez, estudiante de Ingeniería de Software en Bogotá.">
+  <title>Inicio | Kevin Bohorquez</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Fuentes de Google Fonts (incrustación de fuentes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="Logo con las iniciales KB">
+        <span>Kevin Bohorquez</span>
+      </a>
+
+      <nav>
+        <ul class="menu" id="menu">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones-barra">
+        <button class="boton-icono" id="boton-tema" title="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+        <button class="boton-icono" id="boton-menu" title="Abrir menú">Menú</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PORTADA ===== -->
+    <section class="portada">
+      <div class="contenedor">
+        <div>
+          <p class="saludo" id="saludo">¡Hola! Bienvenido a mi hoja de vida</p>
+          <h1>Soy Kevin, <span>futuro ingeniero de software</span></h1>
+          <p class="subtitulo-grande">
+            Estudiante de Ingeniería de Software en Bogotá. Me gusta aprender construyendo cosas:
+            programas en Java y Python, bases de datos y ahora también páginas web.
+          </p>
+          <div class="botones">
+            <a class="boton" href="proyectos.html">Ver mis proyectos</a>
+            <a class="boton secundario" href="contacto.html">Contáctame</a>
+          </div>
+        </div>
+        <img src="img/hero.svg" alt="Ilustración de una ventana de código con las etiquetas HTML, CSS y JS">
+      </div>
+    </section>
+
+    <hr class="contenedor">
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section>
+      <div class="contenedor dos-columnas">
+        <div>
+          <img class="foto-perfil" src="img/avatar.svg" alt="Monograma KB de Kevin Bohorquez">
+        </div>
+        <div>
+          <span class="etiqueta-seccion">Sobre mí</span>
+          <h2>Un poco de <em>quién soy</em></h2>
+          <p>
+            Estoy en formación profesional en <strong>Ingeniería de Software</strong>, con conocimientos en
+            desarrollo de software, <strong>programación orientada a objetos</strong> y <strong>bases de datos</strong>.
+            Me interesa el desarrollo tecnológico y crear soluciones que respondan de manera eficiente a diferentes
+            necesidades y problemas.
+          </p>
+          <p>
+            Me caracterizo por mantener una actitud de <strong>aprendizaje continuo</strong>. Mi formación me ha
+            permitido desarrollar una visión orientada al análisis, la resolución de problemas y el cumplimiento de
+            objetivos, con interés en seguir creciendo y consolidando mi perfil profesional en el sector tecnológico.
+          </p>
+
+          <ul class="lista-datos">
+            <li><strong>Nombre:</strong> Kevin Santiago Bohorquez Barragán</li>
+            <li><strong>Ciudad:</strong> Bogotá D.C., Colombia</li>
+            <li><strong>Estudios:</strong> Ingeniería de Software, Fundación Universitaria Compensar (desde 2025)</li>
+            <li><strong>Idiomas:</strong> Español (nativo) e inglés (A2, en formación continua)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NÚMEROS RÁPIDOS ===== -->
+    <section>
+      <div class="contenedor rejilla">
+        <div class="tarjeta">
+          <p class="dato-grande">7</p>
+          <h3>Formaciones complementarias</h3>
+          <p>Certificaciones, cursos y un diplomado.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="dato-grande">4</p>
+          <h3>Experiencias laborales</h3>
+          <p>Tres en servicio al cliente y una práctica en analítica.</p>
+        </div>
+        <div class="tarjeta">
+          <p class="dato-grande">5</p>
+          <h3>Proyectos</h3>
+          <p>Personales, en equipo y esta misma página.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="contenedor">
+
+    <!-- ===== ACCESOS A LAS OTRAS PÁGINAS ===== -->
+    <section>
+      <div class="contenedor">
+        <span class="etiqueta-seccion">Explora</span>
+        <h2>Conoce más de mi perfil</h2>
+        <div class="rejilla">
+          <div class="tarjeta">
+            <h3>Formación</h3>
+            <p>Mis estudios y mi formación complementaria.</p>
+            <a href="formacion.html">Ver formación →</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Experiencia</h3>
+            <p>Dónde he trabajado y qué hacía en cada lugar.</p>
+            <a href="experiencia.html">Ver experiencia →</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Habilidades</h3>
+            <p>Lenguajes, conocimientos técnicos y habilidades personales.</p>
+            <a href="habilidades.html">Ver habilidades →</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Proyectos</h3>
+            <p>Lo que he construido hasta ahora.</p>
+            <a href="proyectos.html">Ver proyectos →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Kevin Santiago Bohorquez Barragán</strong> · Bogotá D.C., Colombia</p>
+      <p>Hoja de Vida Web</p>
+      <p><a href="#">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

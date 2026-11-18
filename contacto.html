@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datos de contacto de Kevin Bohorquez.">
+  <title>Contacto | Kevin Bohorquez</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Fuentes de Google Fonts (incrustación de fuentes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="Logo con las iniciales KB">
+        <span>Kevin Bohorquez</span>
+      </a>
+
+      <nav>
+        <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones-barra">
+        <button class="boton-icono" id="boton-tema" title="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+        <button class="boton-icono" id="boton-menu" title="Abrir menú">Menú</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="contenedor">
+        <span class="etiqueta-seccion">Contacto</span>
+        <h1>¿Hablamos? <span class="resaltado">Escríbeme</span></h1>
+        <p class="subtitulo-grande">Me interesa seguir aprendiendo y creciendo en el sector tecnológico. Escríbeme por aquí o usa mis datos de contacto.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor dos-columnas" style="align-items: flex-start;">
+
+        <!-- Datos de contacto -->
+        <div>
+          <h2>Mis datos</h2>
+          <div class="tabla-envoltura">
+            <table>
+              <tbody>
+                <tr><td>Correo</td><td><a href="mailto:kevinbtrabaj31@gmail.com">kevinbtrabaj31@gmail.com</a></td></tr>
+                <tr><td>Ciudad</td><td>Bogotá D.C., Colombia</td></tr>
+                <tr><td>GitHub</td><td><a href="https://github.com/kevinacade20-ui" target="_blank">github.com/kevinacade20-ui</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div>
+          <h2>Déjame un mensaje</h2>
+          <form id="formulario-contacto">
+            <div>
+              <label for="nombre">Tu nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Pérez">
+            </div>
+            <div>
+              <label for="correo">Tu correo</label>
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div>
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option>Oferta de práctica o empleo</option>
+                <option>Proyecto en equipo</option>
+                <option>Solo quería saludar</option>
+              </select>
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
+            </div>
+            <button class="boton" type="submit">Enviar mensaje</button>
+          </form>
+          <p id="respuesta-formulario"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Kevin Santiago Bohorquez Barragán</strong> · Bogotá D.C., Colombia</p>
+      <p>Hoja de Vida Web</p>
+      <p><a href="#">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

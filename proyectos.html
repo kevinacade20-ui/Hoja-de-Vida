@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de Kevin Bohorquez.">
+  <title>Proyectos | Kevin Bohorquez</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Fuentes de Google Fonts (incrustación de fuentes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== BARRA DE NAVEGACIÓN ===== -->
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="index.html">
+        <img src="img/logo.svg" alt="Logo con las iniciales KB">
+        <span>Kevin Bohorquez</span>
+      </a>
+
+      <nav>
+        <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones-barra">
+        <button class="boton-icono" id="boton-tema" title="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+        <button class="boton-icono" id="boton-menu" title="Abrir menú">Menú</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="contenedor">
+        <span class="etiqueta-seccion">Proyectos</span>
+        <h1>Lo que he <span class="resaltado">construido</span></h1>
+        <p class="subtitulo-grande">Trabajos personales, de equipo y de clase. Los que están en mi GitHub tienen enlace.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+        <div class="rejilla">
+          <article class="tarjeta proyecto">
+            <span class="insignia">En equipo</span>
+            <img src="img/proy-veterinaria.svg" alt="Dibujo de una huella de mascota">
+            <div class="cuerpo">
+              <h3>Veterinaria Gestión</h3>
+              <p>Sistema de gestión para una veterinaria hecho en equipo en Java. Trabajo en mi propia rama de Git y subo mi parte con pull requests. Me encargué del módulo de Mascota.</p>
+              <ul class="etiquetas"><li>Java</li><li>IntelliJ</li><li>Git</li><li>GitHub</li></ul>
+            </div>
+          </article>
+          <article class="tarjeta proyecto">
+            <span class="insignia">Personal</span>
+            <img src="img/proy-cafe.svg" alt="Dibujo de una taza de café">
+            <div class="cuerpo">
+              <h3>Sistema Café</h3>
+              <p>Sistema de gestión para una cafetería hecho en Python para practicar módulos, manejo de archivos y lógica de negocio. Maneja el menú, el registro de pedidos, el historial, los roles y los reportes, y guarda los datos en un archivo CSV.</p>
+              <ul class="etiquetas"><li>Python</li><li>CSV</li><li>Programación modular</li></ul>
+              <p class="enlace"><a href="https://github.com/kevinacade20-ui/Sistema.Cafe" target="_blank">Ver en GitHub →</a></p>
+            </div>
+          </article>
+          <article class="tarjeta proyecto">
+            <span class="insignia">Personal</span>
+            <img src="img/proy-comida.svg" alt="Dibujo de una hamburguesa">
+            <div class="cuerpo">
+              <h3>Sistema de pedidos de hamburguesas</h3>
+              <p>Sistema de pedidos para un restaurante de hamburguesas hecho en Python. Permite elegir combos, bebidas y sabores, calcula el subtotal y el total, muestra el resumen del pedido y valida lo que se escribe.</p>
+              <ul class="etiquetas"><li>Python</li><li>Validación de datos</li></ul>
+              <p class="enlace"><a href="https://github.com/kevinacade20-ui/Sistema-Comida" target="_blank">Ver en GitHub →</a></p>
+            </div>
+          </article>
+          <article class="tarjeta proyecto">
+            <span class="insignia">Personal</span>
+            <img src="img/proy-ruleta.svg" alt="Dibujo de una ruleta de casino">
+            <div class="cuerpo">
+              <h3>Ruleta</h3>
+              <p>Juego de ruleta hecho en Java con números del 0 al 36. Permite apostar a un número o a rojo o negro, lleva el saldo de créditos del jugador y muestra el resumen de resultados al final.</p>
+              <ul class="etiquetas"><li>Java</li><li>Maven</li><li>NetBeans</li></ul>
+              <p class="enlace"><a href="https://github.com/kevinacade20-ui/Ruleta" target="_blank">Ver en GitHub →</a></p>
+            </div>
+          </article>
+          <article class="tarjeta proyecto">
+            <span class="insignia">Curso</span>
+            <img src="img/proy-sitio.svg" alt="Dibujo de una ventana de navegador con una página web">
+            <div class="cuerpo">
+              <h3>Esta hoja de vida web</h3>
+              <p>El proyecto final de Introducción a los Lenguajes de Internet: varias páginas enlazadas, con HTML, CSS externo y JavaScript, publicado en GitHub Pages.</p>
+              <ul class="etiquetas"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Kevin Santiago Bohorquez Barragán</strong> · Bogotá D.C., Colombia</p>
+      <p>Hoja de Vida Web</p>
+      <p><a href="#">Volver arriba ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

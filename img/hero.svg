@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420">
+  <circle cx="470" cy="70" r="46" fill="#ffc857" opacity=".85"/>
+  <circle cx="60" cy="360" r="34" fill="#f26a2e" opacity=".25"/>
+  <rect x="40" y="40" width="440" height="300" rx="22" fill="#0f4c5c"/>
+  <rect x="40" y="40" width="440" height="46" rx="22" fill="#0b3844"/>
+  <rect x="40" y="64" width="440" height="22" fill="#0b3844"/>
+  <circle cx="72" cy="63" r="7" fill="#ff6b6b"/><circle cx="96" cy="63" r="7" fill="#ffc857"/><circle cx="120" cy="63" r="7" fill="#5ed39a"/>
+  <rect x="100" y="118" width="112" height="12" rx="6" fill="#f26a2e"/>
+  <rect x="120" y="144" width="192" height="12" rx="6" fill="#0f4c5c"/>
+  <rect x="120" y="170" width="144" height="12" rx="6" fill="#ffc857"/>
+  <rect x="140" y="196" width="240" height="12" rx="6" fill="#8aa7b0"/>
+  <rect x="140" y="222" width="176" height="12" rx="6" fill="#f26a2e"/>
+  <rect x="120" y="248" width="96" height="12" rx="6" fill="#0f4c5c"/>
+  <rect x="100" y="274" width="64" height="12" rx="6" fill="#ffc857"/>
+  <rect x="100" y="300" width="208" height="12" rx="6" fill="#8aa7b0"/>
+  
+  <rect x="300" y="250" width="200" height="130" rx="18" fill="#fbf7f2" stroke="#f26a2e" stroke-width="4"/>
+  <text x="400" y="298" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="30" text-anchor="middle" fill="#f26a2e">&lt;/&gt;</text>
+  <text x="400" y="334" font-family="Poppins, Arial, sans-serif" font-weight="600" font-size="15" text-anchor="middle" fill="#0f4c5c">HTML · CSS · JS</text>
+  <rect x="80" y="360" width="320" height="14" rx="7" fill="#0f4c5c" opacity=".2"/>
+</svg>
