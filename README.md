@@ -2,7 +2,7 @@
 
 Este es un **proyecto final** de una asignatura universitaria.
 
-En vez de un PDF, mi hoja de vida es un sitio web con seis páginas conectadas entre sí, pensado para que cualquier persona pueda conocer mi perfil académico, mi experiencia, mis habilidades y mis proyectos de una forma agradable. El código está separado en archivos HTML, CSS y JavaScript.
+En vez de un PDF, la hoja de vida es un sitio web con seis páginas conectadas entre sí, pensado para que cualquier persona pueda conocer mi perfil académico, mi experiencia, mis habilidades y mis proyectos de una forma agradable. El código está separado en archivos HTML, CSS y JavaScript.
 
 ## Páginas
 
